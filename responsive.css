@@ -1,0 +1,202 @@
+@media all and (max-width: 1145px){
+    .header{
+        display: grid;
+        grid-template-areas:
+            'tit tit tit tit tit tit'
+            'nam nam nam nam nam nam'
+            'men men men men men men'
+        ;
+        
+    }
+    .left-head{
+        grid-area: tit;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    .mid-head{
+        grid-area: nam;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    .right-head{
+        grid-area: men;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    .right-head ul{
+        width:100%;
+    }
+    .right-head ul li{
+        width:100%;
+        display: block;
+        text-align: center;
+        background-color: #636e72;
+        margin: 2px;
+        border-radius: 10px;
+    }
+    .right-head ul ul{
+        position: initial;
+        display: block;
+        background-color: transparent;
+    }
+    .right-head ul ul li{
+        width:100%;
+    }
+    .right-head ul ul ul{
+        position: initial;
+        display: block;
+    }
+    .right-head ul ul li{
+        text-align: left;
+        background: #6c5ce7;
+    }
+    .right-head ul ul li:hover{
+        background: #74b9ff;
+    }
+    .right-head ul ul ul li:hover{
+        background: #00b894;
+    }
+    .right-head ul ul ul li{
+        background: #d63031;
+    }
+    .right-head ul ul li::before{
+        content: '-';
+        color:white;
+    }
+    .right-head ul ul ul li::before{
+        content: '*';
+        color:white;
+    }
+    i.d{
+        transform: rotate(0deg);
+    }
+    
+}
+@media all and (max-width:1080px){
+    .left-img{
+        float: none;
+        text-align: center;
+    }
+    .right-img{
+        text-align: center;
+    }
+}
+@media all and (max-width:580px){
+    .body{
+        justify-content: space-around;
+    }
+}
+@media all and (max-width: 960px){
+    .about-me-content{
+        grid-template-areas: 
+            'logo logo logo logo logo logo'
+            'para para para para para para'
+            'info info info info info info'    
+        ;
+    }
+    .logo-part{
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+    }
+    .info-part{
+        grid-area: info;
+        display: flex;
+        justify-content: center;
+    }
+    .para{
+        grid-area:para;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width:1015px){
+    #contact-me{
+        display: grid;
+        grid-template-areas: 'achi achi achi achi achi achi'
+                            'cont cont cont cont cont cont'
+                            'more more more more more more'
+        ;
+    }
+    .achi{
+        grid-area: achi;
+    }
+    .content-container{
+        grid-area: cont;
+        margin-bottom: 20px;
+    }
+    .more-con{
+        grid-area: more;
+    }
+}
+@media all and (max-width:610px){
+    .table{
+        width:387px;
+        margin: auto;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    table thead{
+        background-color: brown;
+        color:white;
+        font-size: 20px;
+    }
+    table thead tr th{
+        padding:10px;
+    }
+    table tbody {
+        font-size: 15px;
+        text-align: center;
+    }
+    table td{
+        padding:5px;
+    }
+    table tfoot {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+@media all and (max-width:705px){
+    form{
+        width:350px;
+        margin: 10px auto;
+        background-color: #95a5a6;
+        padding:20px 30px;
+        position: relative;
+    }
+    form input{
+        display: block;
+        width:100%;
+        margin: 15px 0;
+        font-size: 15px;
+        padding: 5px;
+    }
+    form input[type="radio"]{
+        width:20px;
+        display: inline-block;
+        padding:10px;
+    }
+    select{
+        display: block;
+        width:100%;
+        padding:10px;
+    }
+    form input[type="search"]{
+        width:50%;
+        transition: 0.8s;
+        padding-left: 40px;
+    }
+    form input[type="search"]:focus{
+        width:100%;
+    }
+    .search{
+        position: absolute;
+        top:45px;
+        left:35px;
+        width:15px;
+    }
+}

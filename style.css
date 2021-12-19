@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding:0;
+    outline:none;
+    box-sizing: border-box;
+}
+.logo{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.logo:hover{
+    transform: rotate(720deg);
+}
+.header{
+    background-image: linear-gradient(#2c3e50, #8e44ad, #95a5a6);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+    align-items: center;
+}
+.mid-head h1{
+    font-family: cursive;
+    font-weight: normal;
+    color: white;
+}
+.right-head ul li{
+    list-style: none;
+    padding: 10px;
+    float: left;
+    position: relative;
+}
+.right-head ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.right-head ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: verdana;
+    color: white;
+}
+.right-head ul li:hover{
+    background-color: #fdcb6e;
+}
+.right-head ul ul {
+    position: absolute;
+    top:100%;
+    left:10%;
+    background: #44bd32;
+    display: none;
+}
+.right-head ul ul li{
+    width:200px;
+}
+.right-head ul li:hover > ul{
+    display: block;
+}
+.right-head ul ul ul{
+    top:0%;
+    left:100%;
+    background: #7f8fa6;
+}
+i.d{
+    transform: rotate(270deg);
+}
+.home{
+    padding: 20px 30px;
+}
+.left-img{
+    float: right;
+}
+.description{
+    padding: 80px 100px;
+}
+.description h1{
+    font-family: cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 3rem;
+}
+.description p{
+    font-family: verdana;
+    font-size: 20px;
+    color:#666;
+    text-align: center;
+}
+.hr-style{
+    width:100px;
+    border: 10px dotted white;
+    border-bottom: none;
+    margin: auto;
+}
+#tutorials{
+    padding: 80px 60px;
+    background: #8395a7;
+}
+.head{
+    padding-bottom: 20px;
+}
+.head h1{
+    color:white;
+    font-family: tahoma;
+    text-align: center;
+    font-weight: normal;
+}
+.card{
+    position: relative;
+    margin-bottom: 15px;
+    transition: all 0.4s;
+}
+.card img{
+    width:220px;
+    height:300px;
+    transition: 0.9s;
+}
+.card::after{
+    content: 'HTML PLAYLIST';
+    font-size: 20px;
+    padding:13px;
+    background-color: rgba(0, 0, 0, 0.459);
+    position: absolute;
+    left:0;
+    bottom:3px;
+    width: 194px;
+    text-align: center;
+    color:white
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+    flex-wrap: wrap;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 2px 10px black;
+}
+#about-me{
+    background-color: #54a0ff;
+    padding: 80px 60px;
+}
+.about-me-content{
+    padding:30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.para p{
+    font-family: verdana;
+    font-size: 20px;
+    padding:10px 0;
+    color:white;
+}
+.info-part ul li{
+    list-style: none;
+    color:white;
+    font-family: verdana;
+    font-size: 20px;
+    padding:10px 0;
+    border-bottom: 1px solid white;
+}
+.button button{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Verdana;
+    background: #2e86de;
+    margin: 10px 0;
+    border-radius: 5px;
+    color:white;
+    width:160px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+#skill-container{
+    background-color: #feca57;
+    padding: 80px 60px;
+}
+.skill-card{
+    padding:50px 30px;
+    background-color: gray;
+    width:350px;
+    transition: all 0.4s;
+    margin: 10px;
+}
+.skill-card i{
+    font-size: 50px;
+    color:yellow;
+    border: 3px solid white;
+    padding:20px 30px;
+    border-radius: 50%;
+    margin: 10px auto;
+    width:100px;
+    text-align: center;
+    display: block;
+}
+.skill-card h1{
+    color:white;
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+    font-weight: normal;
+}
+.skill-card:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 2px 10px black;
+}
+.card-body li{
+    list-style: none;
+    font-size: 20px;
+    font-family: verdana;
+    color:white;
+    padding: 15px 0; 
+    position: relative;
+}
+.card-body li::before{
+    width:100%;
+    display: block;
+    content: '';
+    clear: both;
+    background: #9c59b6bd;
+    height:15px;
+    border-radius: 20px;
+    position: absolute;
+    top:calc(100% + -2px);
+}
+.card-body li::after{
+    width:0%;
+    display: block;
+    content: '';
+    clear: both;
+    background: #7b0ba7bd;
+    height:15px;
+    border-radius: 20px;
+    position: absolute;
+    top:calc(100% + -2px);
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+.skill-card:hover .card-body li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+   from{
+       width:0;
+   }
+   to{
+        width:90%;
+   }
+}
+.skill-card:hover .card-body li.css::after{
+   width:80%;
+   transition: 1s;
+}
+.skill-card:hover .card-body li.java::after{
+    width:5%;
+    transition: 1s;
+ }
+ .skill-card:hover .card-body li.php::after{
+    width:5%;
+    transition: 1s;
+ }
+ .skill-card:hover .card-body li.script::after{
+    width:50%;
+    transition: 1s;
+ }
+ .skill-card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ #contact-me{
+     padding: 80px 60px;
+     background-color:#60a3bc ;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+
+.achi p{
+    font-size: 15px;
+    font-family: verdana;
+    color:black;
+    padding: 15px 0; 
+}
+.content-container{
+    display: flex;
+    justify-content: center;
+}
+.contact input{
+    width:318px;
+    height:40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin: 10px;
+}
+.button-div{
+    display: flex;
+    justify-content: space-around;
+}
+.contact textarea{
+    font-size: 20px;
+    font-family: verdana;
+    color:black;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    resize: none;
+    margin: 10px;
+}
+.contact input[type="submit"]{
+    width:100px;
+    height:auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: verdana;
+    color:white;
+    padding:10px;
+    background-color: #38ada9;
+    margin: 10px;
+    display: inline-block;
+}
+.contact input[type="reset"]{
+    width:100px;
+    display: inline-block;
+    margin: 10px;
+    height:auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: verdana;
+    color:white;
+    padding:10px;
+    background-color: #38ada9;
+}
+.icons i{
+    font-size: 40px;
+    padding: 20px 30px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    margin: 10px;
+    transition: 0.4s;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+.icons i:hover{
+    transform: scale(0.9);
+    background: rgba(0, 0, 0, 0.384);
+    color:white;
+}
+#help{
+    padding: 80px 60px;
+    background-color:#eee;
+}
+.calculator{
+    margin: 10px auto;
+    width:260px;
+}
+.cal-head input{
+    width:250px;
+    height: 100px;
+    text-align: right;
+    padding:10px;
+    font-size:25px;
+    font-weight: bold;
+}
+.cal-body input{
+    width:62.5px;
+    height: 50px;
+    text-align: center;
+    padding:10px;
+    font-size:20px;
+    background-color: #95a5a6;
+    color:white;
+    border: 1px solid #999;
+}
+.cal-body input:hover{
+    background-color: #f1c40f;
+}
+.cal-body{
+    font-size: 0;
+}
+.cal-body input.sign{
+    background-color: blueviolet;
+}
+.cal-body input.sign:hover{
+    background-color: #f1c40f;
+}
+.cal-body input.equ-sign{
+    background-color: #f1c40f;
+}
+.table{
+    width:468px;
+    margin: 10px auto;
+}
+table{
+    border-collapse: collapse;
+}
+table thead{
+    background-color: brown;
+    color:white;
+    font-size: 25px;
+}
+table thead tr th{
+    padding:15px;
+}
+table tbody {
+    font-size: 20px;
+    text-align: center;
+}
+table td{
+    padding:5px;
+}
+table tfoot {
+    font-size: 20px;
+    text-align: center;
+}
+table tbody tr:first-child{
+    background-color: #888;
+}
+table tbody tr:last-child{
+    background-color: #888;
+}
+table tbody tr:nth-child(2){
+    background-color: #ddd;
+}
+.para-style{
+    border:6px double blue;
+    width:350px;
+    margin: 10px auto;
+    border-radius: 6px;
+    padding:10px;
+    height: 120px;
+    overflow: auto;
+}
+.para-style p{
+    font-size: 18px;
+    font-family: Verdana;
+    text-decoration: overline;
+    font-style: italic;
+    text-shadow:2px 2px 4px black; 
+}
+form{
+    width:600px;
+    margin: 10px auto;
+    background-color: #95a5a6;
+    padding:20px 30px;
+    position: relative;
+}
+form input{
+    display: block;
+    width:100%;
+    margin: 15px 0;
+    font-size: 25px;
+    padding: 5px;
+}
+form input[type="radio"]{
+    width:20px;
+    display: inline-block;
+    padding:10px;
+}
+select{
+    display: block;
+    width:100%;
+    padding:10px;
+}
+form input[type="search"]{
+    width:50%;
+    transition: 0.8s;
+    padding-left: 40px;
+}
+form input[type="search"]:focus{
+    width:100%;
+}
+.search{
+    position: absolute;
+    top:45px;
+    left:35px;
+    width:30px;
+}
+.para-style p::first-letter{
+    background-color: yellow;
+}
+.para-style p::first-line{
+    background-color: red;;
+}
